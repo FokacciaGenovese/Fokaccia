@@ -165,6 +165,19 @@ section{padding:clamp(74px,10vw,132px) 0;position:relative}
 .foot .fmeta{margin-top:2.2rem;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:#8C8676}
 .foot .rule{width:40px;height:1px;background:var(--gold-2);margin:2.2rem auto 0}
 
+/* crescita */
+.crescita{background:var(--pesto-deep)}
+.phases{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2.4vw,28px);margin-top:clamp(40px,5vw,60px)}
+.phase{background:var(--pesto-2);border:1px solid var(--line-l);border-radius:8px;padding:clamp(22px,3vw,32px)}
+.phase-label{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--gold)}
+.phase-stats{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.4rem}
+.phase-stats b{font-family:"Fraunces",serif;font-size:clamp(2rem,4.4vw,2.7rem);font-weight:600;color:var(--cream);display:block;line-height:1}
+.phase-stats span{font-size:.85rem;color:#C9C3B3;margin-top:.4rem;display:block;line-height:1.35}
+.bigfig{margin-top:clamp(30px,4vw,44px);background:var(--pesto);border:1px solid var(--line-l);border-radius:8px;
+  padding:clamp(22px,3.4vw,32px);text-align:center;font-family:"Fraunces",serif;font-size:clamp(1.15rem,2.8vw,1.75rem);color:#EAE3D3;font-weight:500}
+.bigfig b{color:var(--gold);font-weight:600}
+@media(max-width:560px){.phases{grid-template-columns:1fr}}
+
 /* investimenti */
 .inv{margin-top:clamp(36px,4vw,54px)}
 .inv-legend{display:flex;gap:1.7rem;flex-wrap:wrap;margin-bottom:1.7rem;font-size:.8rem;color:var(--muted);font-weight:600}
@@ -232,6 +245,7 @@ input[type=range]:focus-visible{box-shadow:0 0 0 3px rgba(224,168,91,.4)}
       <a href="#locale">Locale</a>
       <a href="#parodi">Il Parodi</a>
       <a href="#creme">Creme</a>
+      <a href="#crescita">Crescita</a>
       <a href="#investimenti">Investimenti</a>
       <a href="#guadagni">Guadagni</a>
     </div>
@@ -403,6 +417,34 @@ input[type=range]:focus-visible{box-shadow:0 0 0 3px rgba(224,168,91,.4)}
   </div>
 </section>
 
+
+<section id="crescita" class="dark crescita">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow reveal">Strategia di crescita</span>
+      <h2 class="reveal">Un modello semplice, pronto a scalare.</h2>
+      <p class="lead reveal">Il mercato delle bakery cresce a livello globale e la focaccia guadagna riconoscimento in tutto il mondo.
+      Un concept semplice e replicabile, sostenuto da un hub di produzione automatizzato, pronto a espandersi rapidamente in franchising.</p>
+    </div>
+    <div class="phases">
+      <div class="phase reveal">
+        <span class="phase-label">Fase 1 &middot; Anni 1-2</span>
+        <div class="phase-stats">
+          <div><b>10-12</b><span>punti vendita</span></div>
+          <div><b>10-20</b><span>affiliazioni in franchising</span></div>
+        </div>
+      </div>
+      <div class="phase reveal">
+        <span class="phase-label">Fase 2 &middot; Anni 3-5</span>
+        <div class="phase-stats">
+          <div><b>30</b><span>punti vendita</span></div>
+          <div><b>50-60</b><span>affiliazioni in franchising</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="bigfig reveal">Fino a <b>&euro; 35 milioni</b> di fatturato potenziale a 5 anni</div>
+  </div>
+</section>
 
 <section id="investimenti">
   <div class="wrap">
